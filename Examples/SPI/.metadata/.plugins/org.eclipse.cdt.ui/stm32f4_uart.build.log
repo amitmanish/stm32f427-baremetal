@@ -1,0 +1,64 @@
+17:27:30 **** Incremental Build of configuration Debug for project stm32f4_uart ****
+make -j4 all 
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c: In function 'uart_init':
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:8:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRH'
+ GPIOA->CRH |= (uint32_t)0x00000FF0U;
+      ^~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_int':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:23:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRL'
+ GPIOB->CRL |= (uint32_t)0xFF000000;
+      ^~
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+make: *** [Drivers/uart/uart_driver.o] Error 1
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'send_stop':
+make: *** Waiting for unfinished jobs....
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:49:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:55:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:74:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:78:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:91:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:95:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+
+17:27:31 Build Finished (took 1s.122ms)
+

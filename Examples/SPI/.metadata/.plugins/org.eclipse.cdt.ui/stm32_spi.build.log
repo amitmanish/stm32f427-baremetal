@@ -1,0 +1,51 @@
+17:23:20 **** Incremental Build of configuration Debug for project stm32_spi ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/system_stm32f4xx.c
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:7:0:
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.h:11:10: fatal error: stm32f10x.h: No such file or directory
+ #include "stm32f10x.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+make: *** Waiting for unfinished jobs....
+In file included from ../src/main.c:12:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+In file included from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:5:0,
+                 from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:1:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/uart/uart_driver.o] Error 1
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+In file included from ../src/system_stm32f4xx.c:317:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/system_stm32f4xx.o] Error 1
+src/subdir.mk:24: recipe for target 'src/system_stm32f4xx.o' failed
+
+17:23:21 Build Finished (took 1s.71ms)
+

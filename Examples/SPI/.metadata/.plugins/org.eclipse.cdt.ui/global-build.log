@@ -1,0 +1,241 @@
+17:22:26 **** Build of configuration Debug for project stm32_spi ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Building file: ../src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+Building file: ../src/syscalls.c
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/StdPeriph_Driver/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+In file included from ../src/main.c:12:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+In file included from ../src/system_stm32f4xx.c:317:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/system_stm32f4xx.o' failed
+make: *** [src/system_stm32f4xx.o] Error 1
+make: *** Waiting for unfinished jobs....
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+In file included from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:5:0,
+                 from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:1:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+make: *** [Drivers/uart/uart_driver.o] Error 1
+Finished building: ../src/syscalls.c
+ 
+17:23:20 **** Incremental Build of configuration Debug for project stm32_spi ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/system_stm32f4xx.c
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/inc" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:7:0:
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.h:11:10: fatal error: stm32f10x.h: No such file or directory
+ #include "stm32f10x.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+make: *** Waiting for unfinished jobs....
+In file included from ../src/main.c:12:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+In file included from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:5:0,
+                 from /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:1:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/uart/uart_driver.o] Error 1
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+In file included from ../src/system_stm32f4xx.c:317:0:
+/home/lucifer/github/STM32F4/Examples/SPI/stm32_spi/CMSIS/device/stm32f4xx.h:12027:12: fatal error: stm32f4xx_conf.h: No such file or directory
+   #include "stm32f4xx_conf.h"
+            ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/system_stm32f4xx.o] Error 1
+src/subdir.mk:24: recipe for target 'src/system_stm32f4xx.o' failed
+17:26:59 **** Clean-only build of configuration Debug for project stm32f4_uart ****
+make -j4 clean 
+rm -rf *
+ 
+17:27:00 **** Build of configuration Debug for project stm32f4_uart ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Building file: ../src/syscalls.c
+Building file: ../src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Finished building: ../startup/startup_stm32.s
+ 
+../src/system_stm32f4xx.c: In function 'SetSysClock':
+../src/system_stm32f4xx.c:870:3: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+   ^~~~~
+../src/system_stm32f4xx.c:871:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   {
+   ^
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+Finished building: ../src/syscalls.c
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c: In function 'uart_init':
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:8:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRH'
+ GPIOA->CRH |= (uint32_t)0x00000FF0U;
+      ^~
+ 
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+make: *** [Drivers/uart/uart_driver.o] Error 1
+Finished building: ../src/main.c
+make: *** Waiting for unfinished jobs....
+ 
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+Finished building: ../src/system_stm32f4xx.c
+ 
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:7:0:
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.h:11:10: fatal error: stm32f10x.h: No such file or directory
+ #include "stm32f10x.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+17:27:21 **** Incremental Build of configuration Debug for project stm32f4_uart ****
+make -j4 all 
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c: In function 'uart_init':
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:8:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRH'
+ GPIOA->CRH |= (uint32_t)0x00000FF0U;
+      ^~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:7:0:
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.h:11:10: fatal error: stm32f40x.h: No such file or directory
+ #include "stm32f40x.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+make: *** Waiting for unfinished jobs....
+make: *** [Drivers/uart/uart_driver.o] Error 1
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+17:27:30 **** Incremental Build of configuration Debug for project stm32f4_uart ****
+make -j4 all 
+Building file: /home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c
+Building file: /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+/home/lucifer/github/STM32F4/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DSTM32F411E_DISCO -DDEBUG -DSTM32F411xE -I"/home/lucifer/github/STM32F4/Examples/UART/inc" -I"/home/lucifer/github/STM32F4/Drivers" -I"/home/lucifer/github/STM32F4/Drivers/uart" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F4/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c"
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c: In function 'uart_init':
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.c:8:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRH'
+ GPIOA->CRH |= (uint32_t)0x00000FF0U;
+      ^~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_int':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:23:6: error: 'GPIO_TypeDef {aka struct <anonymous>}' has no member named 'CRL'
+ GPIOB->CRL |= (uint32_t)0xFF000000;
+      ^~
+Drivers/uart/subdir.mk:18: recipe for target 'Drivers/uart/uart_driver.o' failed
+make: *** [Drivers/uart/uart_driver.o] Error 1
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'send_stop':
+make: *** Waiting for unfinished jobs....
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:49:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:55:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:74:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:78:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:91:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:95:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F4/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F4/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
